@@ -2,8 +2,8 @@ openapi: 3.1.0
 info:
   title: Legal Consultant Agent API
   description: |
-    AI-powered legal information assistant providing general legal education, explanations of 
-    legal concepts, and referrals to qualified attorneys. This agent provides educational 
+    AI-powered legal information assistant providing general legal education, explanations of
+    legal concepts, and referrals to qualified attorneys. This agent provides educational
     content only and is NOT a substitute for professional legal advice.
 
     Implements the A2A Protocol with JSON-RPC 2.0 methods for agent communication, task
@@ -193,9 +193,9 @@ paths:
         1. Call `message/send` to create a task (returns with state "submitted")
         2. Poll `tasks/get` until state changes to "completed" (or "failed")
         3. Extract results from the `artifacts` array in the completed task
-        
+
         **Legal Disclaimer:**
-        All responses include a mandatory legal disclaimer stating this is educational 
+        All responses include a mandatory legal disclaimer stating this is educational
         information only, not legal advice, and users must consult qualified attorneys.
       operationId: jsonRpc
       requestBody:
